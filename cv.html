@@ -4,48 +4,51 @@ title: cv
 nav: cv
 ---
 
-<!-- actual content -->
-<div class="container-fluid"> 
+<!-- content -->
+<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
+        <div class="col-sm-3">
+            <div class="card bg-light" style="">
+                <div class="card-header text-left">Jack Kang</div>
+                <div class="card-body text-left">
+                    {{ site.data.cv.profile }}
+                </div>
+            </div>
+            <br>
         </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
+        <div class="col-sm-9">
+            <div class="card bg-light" style="">
+                <div class="card-header text-left">Education</div>
+                <div class="card-body text-left">
+                    {% for entry in site.data.cv.schools %}
+                        <h5 class="card-title">{{ entry.name }} — {{ entry.degree }} <span style="float:right;">{{ entry.date }}</span></h5>
+                    {% endfor %}
+                </div>
+            </div>
+            <br>
+            <div class="card bg-light" style="">
+                <div class="card-header text-left">Work Experience</div>
+                <div class="card-body text-left">
+                    {% for entry in site.data.cv.xps %}
+                        <h5 class="card-title">{{ entry.company }} — {{ entry.position }} <span style="float:right;">{{ entry.date }}</span></h5>
+                        <p>{{ entry.description }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <br>
+            <div class="card bg-light" style="">
+                <div class="card-header text-left">Relevant Coursework</div>
+                <div class="card-body text-left">
+                    <p>{{ site.data.cv.coursework }}</p>
+                </div>
+            </div>
+            <br>
+            <div class="card bg-light" style="">
+                <div class="card-header text-left">Skills</div>
+                <div class="card-body text-left">
+                    <p>{{ site.data.cv.skills }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

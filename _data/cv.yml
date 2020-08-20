@@ -1,0 +1,36 @@
+---
+profile: "My name is Jack, and I am an undergraduate Computer Science student at UC Berkeley.
+I have too many hobbies including cycling, music, amateur radio, messing around with computers and electronics, 
+and making things."
+
+schools:
+  - name: "University of California, Berkeley"
+    date: "August 2019 — May 2023"
+    degree: "B.A. in Computer Science"
+
+  - name: "Maine School of Science and Mathematics"
+    date: "August 2017 — August 2019"
+    degree: "High School Diploma"
+
+xps:
+  - company: "Superbin"
+    position: "Machine Learning Intern"
+    date: "June 2018 — August 2018"
+    description: "assisted the R&D department in data and model management\nconducted research in active learning and label-efficient performance improvement solutions for CNNs"
+
+  - company: "MSSM Residential Life"
+    position: "Residential Assistant"
+    date: "August 2018 — May 2019"
+    description: "led various student activities and organized a fundraiser for a shared dorm fridge\nassisted in administrative tasks of Residential Instructors"
+
+  - company: "MSSM Learning Center"
+    position: "Academic Tutor"
+    date: "August 2018 — May 2019"
+    description: 
+
+coursework: "Calculus, Multivariable Calculus, Linear Algebra, Number Theory, Differential Equations, Seminars in Topology and Pure Maths, Data Structures, CS61A: Structure and Interpretation of Computer Programs, EECS16A: Designing Information Devices and Systems I, Linux System Administration: Advanced Track"
+
+certs: "ye ye ye ye ye ye"
+
+skills: "Python, C++, numpy, scikit-learn, matplotlib, openCV, TensorFlow, PyTorch, Docker, Git, tkinter, robotics, Unix / Linux"
+...

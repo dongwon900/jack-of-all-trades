@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <title> {{ page.title }} </title>
 
@@ -25,50 +25,42 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
 
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="/index.html">
         &nbsp;joat.ml
     </a>
 
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav nav-pills mr-auto">
-            <!-- {% if page.nav == "about" %}
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">about</a>
-            {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
-                </li>
-            {% endif %} -->
-            {% if page.nav == "cv" %}
-                <li class="nav-item active">
-                    <a class="nav-link" href="cv.html">cv</a>
-            {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="cv.html">cv</a>
-                </li>
-            {% endif %}
             {% if page.nav == "blog" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="blog.html">blog</a>
+                    <a class="nav-link" href="/blog.html">blog</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">blog</a>
+                    <a class="nav-link" href="/blog.html">blog</a>
                 </li>
             {% endif %}
             {% if page.nav == "projects" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="projects.html">projects</a>
+                    <a class="nav-link" href="/projects.html">projects</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">projects</a>
+                    <a class="nav-link" href="/projects.html">projects</a>
                 </li>
             {% endif %}
             {% if page.nav == "creative" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="creative.html">creative</a>
+                    <a class="nav-link" href="/creative.html">creative</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="creative.html">creative</a>
+                    <a class="nav-link" href="/creative.html">creative</a>
+                </li>
+            {% endif %}
+            {% if page.nav == "cv" %}
+                <li class="nav-item active">
+                    <a class="nav-link" href="/cv.html">cv</a>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/cv.html">cv</a>
                 </li>
             {% endif %}
         </ul>
@@ -76,13 +68,13 @@
 
     <div class="navbar ml-auto">
         <a class="navbar-brand" href="https://github.com/dongwon900" target="_blank">
-            <img src="../images/github.svg" width="25" height="25" alt="github">
+            <img src="/images/github.svg" width="25" height="25" alt="github">
         </a>
         <a class="navbar-brand" href="https://www.youtube.com/channel/UCZmaau3B54hF5MQ9oV7eI6A" target="_blank">
-            <img src="../images/youtube.svg" width="25" height="25" alt="youtube">
+            <img src="/images/youtube.svg" width="25" height="25" alt="youtube">
         </a>
         <a class="navbar-brand" href="https://www.linkedin.com/in/dongwon900" target="_blank">
-            <img src="../images/linkedin.svg" width="25" height="25" alt="linkedin">
+            <img src="/images/linkedin.svg" width="25" height="25" alt="linkedin">
         </a>
     </div>
     
@@ -97,13 +89,13 @@
     {{ content }}
 </div>
 
-<!-- Footer -->
+<!--
 <footer class="container-fluid bg-4 text-center">
-<p>
-    jack kang 2020<br>
-    jack of all trades - <a href="https://joat.ml">joat.ml</a> <br>
+<p style="vertical-align: middle;">
+    dong-daddy™ 2020<br>
+    jack-of-all-trades {{ site.data.identity.version}} - <a href="https://joat.ml">joat.ml</a> <br>
 </p> 
-</footer>
+</footer> -->
 
 </body>
 </html>

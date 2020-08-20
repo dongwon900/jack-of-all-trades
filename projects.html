@@ -5,46 +5,24 @@ nav: projects
 ---
 
 <!-- actual content -->
-<div class="container-fluid"> 
+<div class="container-fluid">
     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: 20px">
-        <div class="col-sm-4">
-            <img src="images/proj0/proj0-0.png" class="img-responsive margin" style="width:80%" alt="Image">
-            <div style="width:85%; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: -15px">
-                <h4>Arduino Touch Key / Keyer</h4>
-                <p>I used the arduino nano's capacitive touch-sensing capability to build a morse key for amateur radio.</p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <p>Site under construction.</p>
-            <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-<!--             <img src="images/proj0/proj0-0.png" class="img-responsive margin" style="width:80%" alt="Image">
-            <div style="width:85%; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: -15px">
-                <h4>mathvis.org</h4>
-                <p>Math / CS visualization website designed to allow for a more intuitive learning experience.</p>
-            </div> -->
-        </div>
-        <div class="col-sm-4">
-            <p>Site under construction.</p>
-            <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-<!--             <img src="images/proj0/proj0-0.png" class="img-responsive margin" style="width:80%" alt="Image">
-            <div style="width:85%; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: -15px">
-                <h4>graphDJ</h4>
-                <p>Graph-based tool for DJs that makes it easier to come up with sets that flow</p>
-            </div> -->
-        </div>
-    </div>
-    <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: 20px">
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
-        <div class="col-sm-4">
-        <p>Site under construction.</p>
-        <img src="images/datboi.jpg" class="img-responsive margin" style="width:80%" alt="Image">
-        </div>
+        {% for post in site.posts %}
+            {% if post.category == "project" %}
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src={{ post.thumbnail }}>
+                        <div class="card-body text-left">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.description }}</p>
+                            <a href="/project/{{ post.filename }}" class="btn btn-primary btn-info">Post</a>
+                            <a href="#" class="btn btn-primary btn-secondary">Yuh</a>
+                            <a href="#" class="btn btn-primary btn-danger">Yee</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
