@@ -32,10 +32,6 @@ div
   -o-background-size: cover;
   background-size: cover;
 }
-.terminal {
-  text-align: left;
-}
-
 .container-fluid {
   padding-top: 20px;
 }
