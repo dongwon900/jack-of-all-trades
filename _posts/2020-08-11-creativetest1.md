@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "In The Works"
-category: blogpost
-description: "site under construction"
+category: creative
 thumbnail: "images/datboi.jpg"
+description: "site under construction"
 ---
 yee

@@ -10,13 +10,19 @@ nav: blog
             {% if post.category == "blogpost" %}
                 <div class="col-sm-3">
                     <div class="card">
-                        <img class="card-img-top" src="images/datboi.jpg">
+                        <img class="card-img-top" src={{ post.thumbnail }}>
                         <div class="card-body text-left">
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">{{ post.description }}</p>
-                            <a href="#" class="btn btn-primary btn-info">Yeah</a>
-                            <a href="#" class="btn btn-primary btn-secondary">Yuh</a>
-                            <a href="#" class="btn btn-primary btn-danger">Yee</a>
+                            {% if post.postname %}
+                                <a href="/blog/{{ post.postname }}" class="btn btn-primary btn-info">Post</a>
+                            {% endif %}
+                            {% if post.github %}
+                                <a href="{{ post.github }}" class="btn btn-primary btn-secondary">GitHub</a>
+                            {% endif %}
+                            {% if post.youtube %}
+                                <a href="{{ post.youtube }}" class="btn btn-primary btn-danger">YouTube</a>
+                            {% endif %}
                         </div>
                     </div>
                     <br>
