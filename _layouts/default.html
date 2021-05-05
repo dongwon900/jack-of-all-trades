@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href={{ "style.css" | absolute_url }}>
+    <link rel="stylesheet" href="/style.css">
 
     <title> {{ page.title }} </title>
 
@@ -25,7 +25,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
 
-    <a class="navbar-brand" href={{ "/index.html" | absolute_url }}>
+    <a class="navbar-brand" href=/index.html>
         &nbsp;joat.ml
     </a>
 
@@ -33,26 +33,26 @@
         <ul class="navbar-nav nav-pills mr-auto">
             {% if page.nav == "blog" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href={{ "/blog.html" | absolute_url }}>blog</a>
+                    <a class="nav-link" href=/blog.html>blog</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href={{ "/blog.html" | absolute_url }}>blog</a>
+                    <a class="nav-link" href="/blog.html">blog</a>
                 </li>
             {% endif %}
             {% if page.nav == "projects" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href={{ "/projects.html" | absolute_url }}>projects</a>
+                    <a class="nav-link" href="/projects.html">projects</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href={{ "/projects.html" | absolute_url }}>projects</a>
+                    <a class="nav-link" href="/projects.html">projects</a>
                 </li>
             {% endif %}
             {% if page.nav == "cv" %}
                 <li class="nav-item active">
-                    <a class="nav-link" href={{ "/cv.html" | absolute_url }}>cv</a>
+                    <a class="nav-link" href="/cv.html">cv</a>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href={{ "/cv.html" | absolute_url }}>cv</a>
+                    <a class="nav-link" href="/cv.html">cv</a>
                 </li>
             {% endif %}
         </ul>
@@ -60,13 +60,13 @@
 
     <div class="navbar ml-auto">
         <a class="navbar-brand" href="https://github.com/dongwon900" target="_blank">
-            <img src={{ "/images/github.svg" | absolute_url }} width="25" height="25" alt="github">
+            <img src= "/images/icons/github.svg" width="25" height="25" alt="github">
         </a>
         <a class="navbar-brand" href="https://www.youtube.com/channel/UCZmaau3B54hF5MQ9oV7eI6A" target="_blank">
-            <img src={{ "/images/youtube.svg" | absolute_url }} width="25" height="25" alt="youtube">
+            <img src= "/images/icons/youtube.svg" width="25" height="25" alt="youtube">
         </a>
         <a class="navbar-brand" href="https://www.linkedin.com/in/dongwon900" target="_blank">
-            <img src={{ "/images/linkedin.svg" | absolute_url }} width="25" height="25" alt="linkedin">
+            <img src= "/images/icons/linkedin.svg" width="25" height="25" alt="linkedin">
         </a>
     </div>
     

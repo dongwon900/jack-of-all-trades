@@ -12,7 +12,7 @@ nav: blog
                     <div class="card">
                         <img class="card-img-top" src={{ post.thumbnail }}>
                         <div class="card-body text-left">
-                            <h5 class="card-title">{{ post.title }}</h5>
+                            <h5 class="card-title"><a href={{ post.url }}> {{ post.title }} </a></h5>
                             <p class="card-text">{{ post.description }}</p>
                             {% if post.postname %}
                                 <a href="/blog/{{ post.postname }}" class="btn btn-primary btn-info">Post</a>
@@ -23,6 +23,7 @@ nav: blog
                             {% if post.youtube %}
                                 <a href="{{ post.youtube }}" class="btn btn-primary btn-danger">YouTube</a>
                             {% endif %}
+							<p class="card-text text-right">{{ post.date | date: '%B %d, %Y' }}</p>
                         </div>
                     </div>
                     <br>
