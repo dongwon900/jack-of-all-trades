@@ -1,0 +1,34 @@
+---
+layout: default
+title: creative
+nav: creative
+---
+
+<!-- actual content -->
+<div class="container-fluid"> 
+    <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: 20px">
+        {% for post in site.posts %}
+            {% if post.category == "creative" %}
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src={{ post.thumbnail }}>
+                        <div class="card-body text-left">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.description }}</p>
+                            {% if post.postname %}
+                                <a href="/creative/{{ post.postname }}" class="btn btn-primary btn-info">Post</a>
+                            {% endif %}
+                            {% if post.github %}
+                                <a href="{{ post.github }}" class="btn btn-primary btn-secondary">GitHub</a>
+                            {% endif %}
+                            {% if post.youtube %}
+                                <a href="{{ post.youtube }}" class="btn btn-primary btn-danger">YouTube</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
