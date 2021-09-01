@@ -7,6 +7,14 @@ nav: projects
 <!-- actual content -->
 <div class="container-fluid">
     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: 20px">
+        <div class="col-sm-12 text-left">
+            <button type="button" class="btn btn-primary">Programming</button>
+            <button type="button" class="btn btn-success">Electronics</button>
+            <button type="button" class="btn btn-danger">Art</button>
+            <button type="button" class="btn btn-warning">Fabrication</button>
+        </div>
+    </div>
+    <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: 20px">
         {% for post in site.posts %}
             {% if post.category == "project" %}
                 <div class="col-sm-3">
