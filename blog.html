@@ -15,7 +15,7 @@ nav: blog
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">{{ post.description }}</p>
                             {% if post.postname %}
-                                <a href="/blog/{{ post.postname }}" class="btn btn-primary btn-info">Post</a>
+                                <a href="{{ post.url }}" class="btn btn-primary btn-info">Post</a>
                             {% endif %}
                             {% if post.github %}
                                 <a href="{{ post.github }}" class="btn btn-primary btn-secondary">GitHub</a>
