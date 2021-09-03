@@ -14,9 +14,9 @@ schools:
 
 xps:
   - company: "Republic of Korea Army"
-    position: "Military Intelligence Specialist / Translator (Private First Class)"
+    position: "Military Intelligence Specialist / Translator (CPL)"
     date: "November 2020 — Present"
-    description: "Intelligence Analyst / Translator at the ROK Army 39th Infantry Division Headquarters"
+    description: "ROK Army 39th ID HQ"
 
   - company: "Gangnam District Government"
     position: "Temperature Screener / Quarantine Assistant"
@@ -31,7 +31,7 @@ xps:
   - company: "MSSM Residential Life"
     position: "Residential Assistant"
     date: "August 2018 — May 2019"
-    description: "led various student activities and organized a fundraiser for a shared dorm fridge\nassisted in administrative tasks of Residential Instructors"
+    description: "led various student activities and organized a fundraiser for a shared dorm fridge\nassisted Residential Instructors in various leadership & administrative tasks"
 
   - company: "MSSM Learning Center"
     position: "Academic Tutor"
