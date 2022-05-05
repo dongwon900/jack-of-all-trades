@@ -7,7 +7,7 @@ body {
   line-height: 1.8;
 }
 
-p {font-size: 16px;}
+p, ul {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 { 
   background-color: #1abc9c; /* Green */
@@ -25,6 +25,8 @@ p {font-size: 16px;}
   background-color: #2f2f2f; /* Black Gray */
   color: #fff;
 }
+
+a {font-size: 16px;}
 
 div
 .jumbotron {

@@ -5,7 +5,7 @@ and making things."
 
 schools:
   - name: "University of California, Berkeley"
-    date: "August 2019 — May 2023"
+    date: "August 2019 — May 2025"
     degree: "B.A. in Computer Science"
 
   - name: "Maine School of Science and Mathematics"
@@ -14,29 +14,46 @@ schools:
 
 xps:
   - company: "Republic of Korea Army"
-    position: "Military Intelligence Specialist / Translator (CPL)"
-    date: "November 2020 — Present"
-    description: "ROK Army 39th ID HQ"
+    positions:
+      - position: "Military Intelligence & Security Specialist"
+        date: "November 2020 — May 2022"
+        description:
+          - line: "Provided assistance in various intelligence operations related tasks and was in charge of security related tasks, making sure OPSEC was being maintained"
+          - line: Wrote automation programs for repetitive tasks (data entry, replying to civilian inquiries, text formatting)
+      - position: "Interpreter / Translator"
+        date: "November 2020 — May 2022"
+        description:
+          - line: "Served as an English interpreter-translator during biannual ROK-US combined exercises, as well as other regular field / command post exercises where operations necessitated language support"
+      - position: "Squad Leader"
+        date: "December 2021 — May 2022"
+        description:
+          - line: "Served as squad leader at my unit, leading a squad of 8-10; was responsible for maintaining weapons and equipment, providing one-on-one mentoring for squad members, handling logistics and administrative needs for the squad, ensuring combat readiness, etc."
 
   - company: "Gangnam District Government"
-    position: "Temperature Screener / Quarantine Assistant"
-    date: "May 2020 - November 2020"
-    description: "I took temperatures and collected visitor information for COVID-19 contact tracing purposes at the local community center"
+    positions:
+      - position: "Temperature Screener / Quarantine Assistant"
+        date: "May 2020 - November 2020"
+        description:
+          - line: "Took temperatures and collected visitor information for COVID-19 contact tracing purposes at the local community center"
 
   - company: "Superbin"
-    position: "Machine Learning Intern"
-    date: "June 2018 — August 2018"
-    description: "assisted the R&D department in data and model management\nconducted research in active learning and label-efficient performance improvement solutions for CNNs"
-
-  - company: "MSSM Residential Life"
-    position: "Residential Assistant"
-    date: "August 2018 — May 2019"
-    description: "led various student activities and organized a fundraiser for a shared dorm fridge\nassisted Residential Instructors in various leadership & administrative tasks"
-
-  - company: "MSSM Learning Center"
-    position: "Academic Tutor"
-    date: "August 2018 — May 2019"
-    description:
+    positions:
+      - position: "Machine Learning Intern"
+        date: "June 2018 — August 2018"
+        description:
+          - line: "Assisted the R&D department in data and model management"
+          - line: "Conducted research in active learning and label-efficient performance improvement solutions for CNNs"
+  - company: "Maine School of Science and Mathematics"
+    positions:
+      - position: "Residential Assistant"
+        date: "August 2018 — May 2019"
+        description:
+          - line: "led various student activities and organized a fundraiser for a shared dorm fridge"
+          - line: "assisted Residential Instructors in various leadership & administrative tasks"
+      - position: "Academic Tutor"
+        date: "August 2018 — May 2019"
+        description:
+          - line: "Assisted students at the Learning Center in math, English (composition), and computer science course related questions"
 
 coursework: "Calculus, Multivariable Calculus, Linear Algebra, Number Theory, Differential Equations, Seminars in Topology and Pure Maths, Data Structures, CS61A: Structure and Interpretation of Computer Programs, EECS16A: Designing Information Devices and Systems I, Linux System Administration: Advanced Track, CS70: Discrete Mathematics and Probability Theory, CS61B: Data Structures"
 

@@ -9,7 +9,7 @@ nav: cv
     <div class="row">
         <div class="col-sm-3">
             <div class="card bg-light" style="">
-                <div class="card-header text-left">Jack Kang</div>
+                <div class="card-header text-left" style="font-weight: bold;">Jack Kang</div>
                 <div class="card-body text-left">
                     {{ site.data.cv.profile }}
                 </div>
@@ -18,21 +18,33 @@ nav: cv
         </div>
         <div class="col-sm-9">
             <div class="card bg-light" style="">
-                <div class="card-header text-left">Education</div>
+                <div class="card-header text-left" style="font-weight: bold;">Education</div>
                 <div class="card-body text-left">
                     {% for entry in site.data.cv.schools %}
-                        <h5 class="card-title">{{ entry.name }} — {{ entry.degree }} <span style="float:right;">{{ entry.date }}</span></h5>
+                        <h5 class="card-title" style="font-weight: bold;">{{ entry.name }}</h5>
+                        <h6 style="font-style: italic;">{{ entry.degree }} <span style="float: right;">{{ entry.date }}</span></h6>
                     {% endfor %}
                 </div>
             </div>
             <br>
             <div class="card bg-light" style="">
-                <div class="card-header text-left">Work Experience</div>
+                <div class="card-header text-left" style="font-weight: bold;">Work Experience</div>
                 <div class="card-body text-left">
                     {% for entry in site.data.cv.xps %}
-                        <h5 class="card-title">{{ entry.company }} — {{ entry.position }} <span style="float:right;">{{ entry.date }}</span></h5>
-                        <p>{{ entry.description }}</p>
-                    {% endfor %}
+                    <div style="padding-bottom: 10px;">
+                        <h5 class="card-title" style="font-weight: bold;">{{ entry.company }}</h5>
+                        {% for pos in entry.positions %}
+                        <ul style="font-style: italic; margin: 0px; padding-left: 0px;">- {{ pos.position }} <span style="float:right;">{{ pos.date }}</span></ul>
+                        <div style="margin-left: 30px; padding-bottom: 10px;">
+                            {% for l in pos.description %}
+                            <ul style="display: list-item; margin: 0px; padding-left: 0px;">
+                                {{ l.line }}
+                            </ul>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}    
+                    </div>
+                    {% endfor %} 
                 </div>
             </div>
             <br>
