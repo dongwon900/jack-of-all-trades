@@ -21,8 +21,10 @@ nav: cv
                 <div class="card-header text-left" style="font-weight: bold;">Education</div>
                 <div class="card-body text-left">
                     {% for entry in site.data.cv.schools %}
+                    <div style="padding-bottom: 10px;">
                         <h5 class="card-title" style="font-weight: bold;">{{ entry.name }}</h5>
                         <h6 style="font-style: italic;">{{ entry.degree }} <span style="float: right;">{{ entry.date }}</span></h6>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
@@ -49,14 +51,14 @@ nav: cv
             </div>
             <br>
             <div class="card bg-light" style="">
-                <div class="card-header text-left">Relevant Coursework</div>
+                <div class="card-header text-left" style="font-weight: bold;">Relevant Coursework</div>
                 <div class="card-body text-left">
                     <p>{{ site.data.cv.coursework }}</p>
                 </div>
             </div>
             <br>
             <div class="card bg-light" style="">
-                <div class="card-header text-left">Skills</div>
+                <div class="card-header text-left" style="font-weight: bold;">Skills</div>
                 <div class="card-body text-left">
                     <p>{{ site.data.cv.skills }}</p>
                 </div>

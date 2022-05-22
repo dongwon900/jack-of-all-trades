@@ -1,7 +1,6 @@
 ---
 profile: "My name is Jack, and I am an undergraduate Computer Science student at UC Berkeley.
-I have too many hobbies including cycling, music, amateur radio, messing around with computers and electronics, 
-and making things."
+I like  cycling, music, amateur radio, messing around with computers and electronics, and making things."
 
 schools:
   - name: "University of California, Berkeley"
@@ -18,8 +17,9 @@ xps:
       - position: "Military Intelligence & Security Specialist"
         date: "November 2020 — May 2022"
         description:
-          - line: "Provided assistance in various intelligence operations related tasks and was in charge of security related tasks, making sure OPSEC was being maintained"
-          - line: Wrote automation programs for repetitive tasks (data entry, replying to civilian inquiries, text formatting)
+          - line: "Provided assistance in various intelligence operations related tasks"
+          - line: "Was in charge of various security tasks, making sure OPSEC was being maintained at all times"
+          - line: "Wrote automation programs for repetitive tasks (data entry, replying to civilian inquiries, text formatting), was awarded for innovative improvements to workflow"
       - position: "Interpreter / Translator"
         date: "November 2020 — May 2022"
         description:
@@ -27,9 +27,9 @@ xps:
       - position: "Squad Leader"
         date: "December 2021 — May 2022"
         description:
-          - line: "Served as squad leader at my unit, leading a squad of 8-10; was responsible for maintaining weapons and equipment, providing one-on-one mentoring for squad members, handling logistics and administrative needs for the squad, ensuring combat readiness, etc."
+          - line: "Served as squad leader, leading a squad of 8-10; was responsible for maintaining weapons and equipment, providing one-on-one mentoring, handling logistics and administrative needs, ensuring combat readiness, etc."
 
-  - company: "Gangnam District Government"
+  - company: "Gangnam District Office"
     positions:
       - position: "Temperature Screener / Quarantine Assistant"
         date: "May 2020 - November 2020"
